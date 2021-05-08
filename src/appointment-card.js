@@ -27,7 +27,7 @@ class appointmentCardContainer extends HTMLElement{
                     <span class="pin-code">${center.pincode}</span>
                 </div>
                 <div class="vaccine-details">
-                    <span><img src="./imgs/icons8-syringe-100.png" alt="" class="syrige-mg"/>
+                    <span><img src="../src/imgs/icons8-syringe-100.png" alt="" class="syrige-mg"/>
                     </span><span class="fee-type">${center.fee_type}</span>
                 </div>
                 <div class="clock">
