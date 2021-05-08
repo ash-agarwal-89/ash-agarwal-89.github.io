@@ -4,7 +4,7 @@ class MyHeader extends HTMLElement{
         this.innerHTML = `
         <header class="header">
             <a href="/index.html" class="header_anchor">
-                <img src="../imgs/vaccine.png" alt="brand" class="brand_image">
+                <img src="../src/imgs/vaccine.png" alt="brand" class="brand_image">
                 <span class="brand_name">covaxinate</span>
             </a>
         </header>`;
