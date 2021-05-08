@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Itim', cursive;
+}
+
+.bg-loader{
+    position:relative;
+    background-color: linear-gradient(rgba(241, 159, 82, 0.897), rgb(235, 182, 85));
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    /* top: 90px;
+    left: 0px; */
+    
+    
+}
+
+.bg-loader .loader-img{
+    width: 80px;
+    height: 80px;
+    margin: 180px 0 0 150px;
+    
+}
+
+.bg-loader .loader-text{
+    
+    margin: 5px 0 0 160px;
+    
+}
+
+.hide{
+    display: none;
+}
+
+.header{
+    min-height: 100px;
+    /* background-color: rgb(250, 249, 249); */
+}
+
+.header_anchor{
+    padding:10px;
+    margin-left: 30px;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header_anchor img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.header_anchor span{
+    /* font-family: 'Itim', cursive; */
+    font-size: 30px;
+    color: rgb(185, 123, 8);
+
+}
+
+
+.main{
+    background: linear-gradient(rgba(241, 159, 82, 0.897), rgb(235, 182, 85));
+    min-height: 300px;
+}
+
+.bg-image{
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 300px;
+    z-index: 0;
+}
+
+
+.content-text{
+    padding: 20px 40px;
+    color: rgb(48, 47, 44);
+}
+
+.content-text .content-headline{
+    font-size: 25px;
+    font-weight:bolder;
+    font-family: 'Nunito', sans-serif;
+
+    
+}
+
+.content-text .content-details{
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+
+    
+}
+
+.btn-wrapper{
+    padding: 20px 20%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 50px;
+    border-color: orange;
+    /* background-color: black; */
+    border-style: none;
+    border-width: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.viewmore-btn{
+    background-color: rgb(243, 117, 33);
+}
+
+.getstarte-btn{
+    background-color: rgb(22, 21, 21);
+    color: white;
+}
+
+
+.appointment-container{
+    margin: 10px 20px;
+}
+
+select{
+    margin: 10px 10%;
+    width: 80%;
+    outline:none;
+    border:none;
+    border-radius: 8px;
+    height: 30px;
+    background-color:rgb(22, 21, 21);
+    color:white;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+.fetch-appointments-btn{
+    margin: 10px 25%;
+    font-size: 13px;
+    background-color:rgb(243, 117, 33);
+    color: white;
+    font-weight: bolder;
+    transition:all 0.4s ease;
+}
+
+.fetch-appointments-btn:hover{
+    cursor: pointer;
+    box-shadow: inset 100px 0 0 0 rgb(245, 100, 3);
+}
+
+.fetch-appointments-btn:disabled {
+    /* background: #f3efef;
+    color:black; */
+    display:none;
+  }
+
+/* select option{
+    background-color:black;
+    font:red;
+} */
+
+
+.appointments-list{
+    margin: auto 20px;
+}
+
+.appointment-card{
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-between;
+    border: 2px rgb(247, 144, 11);
+    background-color: rgb(238, 195, 115);
+    /* color: rgb(15, 15, 15); */
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+.appointment-card .appointment-venue-details{
+    width: 80%; 
+    margin-left: 5px;
+}
+
+.appointment-card:hover{
+    background-color: rgb(245, 208, 139);
+    cursor: pointer;
+}
+
+.appointment-card .hospital-name{
+    color: #4a274f;
+    font-size: 13px;
+    border-bottom: 1px solid #4A274F;
+    width:fit-content;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.session-data{
+    margin-top: 20px;
+    margin-left: 10px;;
+}
+.session-data .hospital-name{
+    color: #4a274f;
+    font-size: 18px;
+    border-bottom: 1px solid #4A274F;
+    width:fit-content;
+    /* width: 100%; */
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.session-data .venue-address-container{
+    padding: 5px 2px 2px 5px; 
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    color: black;
+}
+
+.venue-address-container, 
+.vaccine-details,
+.clock{
+    /* background-color: red !important; */
+    padding: 5px 2px 2px 5px; 
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+.venue-address-container i,
+.clock i{
+    /* background-color: red !important; */
+    color: #DD4B3E;
+    width: 15px;
+    /* height:20px; */
+}
+.clock i{
+    color: black;
+}
+
+.vaccine-details .syrige-mg{
+    width:20px;
+    height:20px;
+}
+
+.fee-type{
+    text-align: center;
+    height: 20px;
+}
+
+
+.appointment-card .slots{
+    width: 20%; 
+    margin-right: 0px;
+    padding: 15% 5px 15% 5px;
+    /* margin-bottom: 25%; */
+    border-left: 2px solid black;
+    background-color: #4A274F;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+
+}
+.appointment-card .slots:hover{
+    background-color: #8f349b;
+    cursor: pointer;
+
+}
+.show-session span{
+    text-decoration: none;
+    font-size: 13px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color:rgb(255, 255, 255);
+    padding-right: 5px;
+}
+/* .show-session{
+
+    border: 2px solid brown;
+} */
+/* .slots{
+    
+} */
+
+.session-modal{
+    position: fixed;
+    top: 20%;
+    left: 20px;
+    z-index: 100;
+    /* border: 2px solid black; */
+    background-color: rgb(238, 195, 115);
+    color:white;
+    width: 90%;
+    height: 60%;
+    display:none;
+    overflow-y:scroll;
+    box-shadow: 2px 2px 2px rgb(26, 25, 24);
+    border-radius: 8px;
+}
+
+.session-modal::-webkit-scrollbar{
+    width: 5px;
+    /* height: 1px; */
+}
+
+.session-modal::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px 20px;
+    /* height: 10px; */
+}
+
+.close-btn{
+    position:absolute;
+    right: 2px;
+    top: 2px;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(238, 195, 115);
+    border: none;
+    outline: none;
+}
+
+.show-modal{
+    display:block;
+}
+
+.blur{
+    filter:blur(5px);
+}
+
+/* session cards */
+.sesion-card{
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 10px;
+    background-color: aliceblue;
+    color: black;
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-color:rgb(240, 206, 143);
+    border-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+   
+}
+
+.sesion-card .session-date{
+    font-size: 13px;
+    color:rgb(42, 32, 90);
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    padding-top: 14px;
+    font-family: inherit;
+    border-radius: 5px;
+    width: 30%;
+    
+}
+
+.sesion-card .session-details{
+    font-family: inherit;
+    background-color: rgb(245, 200, 118);
+    padding-left: 10px;
+    border-radius: 5px;
+    width: 30%;
+
+    
+}
+
+.sesion-card .session-slots{
+    font-family: inherit;
+    background-color: rgb(243, 179, 60);
+    padding-left: 5px;
+    border-radius: 5px;
+    width: 40%;
+    font-size: 12px;
+    
+}
+
+.session-details h3,
+.session-slots h4{
+    margin-top: 5px;
+}
+
+.footer{
+    background: black;
+    min-height: 100px; 
+    color: white
+
+}
+
+.footer-items{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.footer-social-list{
+    /* text-decoration: none; */
+    list-style-type: none;
+    padding-top: 10px;
+    
+}
+.footer-social-list a{
+    text-decoration: none;
+    color: white;
+    /* list-style-type: none; */
+    
+}
+
+.gmail{
+    color: #DB4437;
+}
+
+.facebook{
+    color: #4267B2;
+}
+
+.utube{
+    color: #c4302b;
+}
+
+.tweet{
+    color: #1DA1F2;
+}
+
+.powered-by{
+    text-align: right;
+}
