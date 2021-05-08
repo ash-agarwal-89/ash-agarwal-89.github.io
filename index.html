@@ -1,15 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/png" href="/favicon.svg"/>
-    <link rel="stylesheet" href="style.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>covaxinate</title>
-  </head>
-  <body>
-    <h1>Covaxinate</h1>
-    <script src="script.js"></script>
-  </body>
+    <link rel="icon" type="image/png" href="/imgs/vaccine.png" />
+    <script src="https://kit.fontawesome.com/6c26eae186.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+
+<body>
+    <!-- <div class="bg-loader hide">
+        <img src="./imgs/bg-loader.gif" alt="bg-loader-img" class="loader-img">
+        <div class="loader-text">loading...</div>
+    </div> -->
+    <container class="container">
+
+        <my-header></my-header>
+
+
+        <main class="main">
+            <div class="content-text">
+                <h2 class="content-headline">Tracking vaccination at fingertips</h2>
+                <p class="content-details">Find available slots and book your appointment. Help others too.</p>
+                <iframe width="300" height="250" src="https://www.youtube.com/embed/ciJ8PlhPx4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <div class="btn-wrapper">
+                <button id="viewMoreButton" class="btn viewmore-btn">Read More</button>
+                <button id="getstarteButton" class="btn getstarte-btn">Find your slot</button>
+            </div>
+
+
+            <div class="appointment-container hide">
+                <h2 class="content-headline">Search for slots near your area</h2>
+                <select name="state" id="state" class="select-list" onchange="fetchDistrcits()">
+                    <option value="none" class="option">--Select State--</option>
+                </select>
+                <br>
+                <select name="disctrict" id="district" class="select-list" onchange="onDistrictSelection()">
+                    <option value="none" class="option">--Select district--</option>
+                </select>
+                <button id="fetch-appointment" class="btn fetch-appointments-btn" disabled>Search Appointments</button>
+                <div class="appointments-list"></div>
+                
+            </div>
+            <!-- <div class="session-modal">
+                <button id="close-btn" class="close-btn"><i class="fas fa-times"></i></button>
+                <div class="sesion-data">
+                    <h2 class="hospital-name-session">Hospital 1</h2>
+                   
+                    <div class="sesion-card">
+                        <h3 class="session-date">08-05-2021</h3>
+                        <div class="session-details">
+                            
+                            <h3 class="available-capacity">0</h3>
+                            <h3 class="min-age-limit">45</h3>
+                            <h3 class="vaccine-name">COVISHIELD</h3>                                
+                        </div>
+            
+                        <div class="session-slots">
+                            <h3 class="slot-time">09:00AM-11:00AM</h3>
+                            <h3 class="slot-time">09:00AM-11:00AM</h3>
+                            <h3 class="slot-time">09:00AM-11:00AM</h3>
+                            <h3 class="slot-time">09:00AM-11:00AM</h3>  
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div> -->
+
+            <br>
+            <div class="response"></div>
+            
+
+        </main>
+
+
+
+        <my-footer></my-footer>
+    </container>
+    <script src="main.js"></script>
+    <script src="/myfooter.js"></script>
+    <script src="/myheader.js"></script>
+    <script src="/appointment-card.js"></script>
+    <script src="/modal-container.js"></script>
+    <script src="/session-item.js"></script>
+
+</body>
+
 </html>
